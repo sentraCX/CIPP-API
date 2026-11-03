@@ -402,3 +402,7 @@ Impact colour mapping: `Low Impact` → `info`, `Medium Impact` → `warning`, `
 5. Use `Get-CippException` for error handling in new code
 6. Prepare the frontend JSON payload for the PR description
 7. No changes needed to module manifests or registration code
+
+<!-- weavestream-records:start -->
+Operational records and credentials must follow the [repository Weavestream standard](../../AGENTS.md#weavestream-records-and-credentials). Weavestream is canonical: secrets in its vault, applications and operational facts in flexible assets, high-level guidance in linked Documents. Update and verify affected records in the same change. Do not create or update operational records in Hudu.
+<!-- weavestream-records:end -->

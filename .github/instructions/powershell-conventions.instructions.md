@@ -205,3 +205,7 @@ return $Results
 return $true
 if (-not $Licensed) { return }
 ```
+
+<!-- weavestream-records:start -->
+Operational records and credentials must follow the [repository Weavestream standard](../../AGENTS.md#weavestream-records-and-credentials). Weavestream is canonical: secrets in its vault, applications and operational facts in flexible assets, high-level guidance in linked Documents. Update and verify affected records in the same change. Do not create or update operational records in Hudu.
+<!-- weavestream-records:end -->

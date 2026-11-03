@@ -224,3 +224,7 @@ $Results = Search-CIPPDbData -TenantFilter @('tenant1.onmicrosoft.com') -SearchT
 - **New-CIPPDbRequest vs Get-CIPPDbItem**: Use `New-CIPPDbRequest` when you need actual data (returns deserialized objects). Use `Get-CIPPDbItem` for metadata/counts or raw entity inspection.
 - **Batch size**: The 500-item flush threshold is tuned for performance. Do not modify it.
 - **GC behavior**: One `GC.Collect()` per batch flush. Aggressive GC was benchmarked and found slower.
+
+<!-- weavestream-records:start -->
+Operational records and credentials must follow the [repository Weavestream standard](../../AGENTS.md#weavestream-records-and-credentials). Weavestream is canonical: secrets in its vault, applications and operational facts in flexible assets, high-level guidance in linked Documents. Update and verify affected records in the same change. Do not create or update operational records in Hudu.
+<!-- weavestream-records:end -->

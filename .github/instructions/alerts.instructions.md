@@ -261,3 +261,7 @@ The function is invoked dynamically — just drop the `.ps1` file in the Alerts 
 2. Follow the skeleton exactly (`.FUNCTIONALITY Entrypoint`, param block, try/catch, Write-AlertTrace)
 3. Add license gating if the data source requires a specific SKU
 4. No changes needed to module manifests, timers, or registration code
+
+<!-- weavestream-records:start -->
+Operational records and credentials must follow the [repository Weavestream standard](../../AGENTS.md#weavestream-records-and-credentials). Weavestream is canonical: secrets in its vault, applications and operational facts in flexible assets, high-level guidance in linked Documents. Update and verify affected records in the same change. Do not create or update operational records in Hudu.
+<!-- weavestream-records:end -->
