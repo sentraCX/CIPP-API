@@ -38,3 +38,27 @@ Company ID: `d4bd8eb5-0bf8-4eb7-b453-4491e80a1844`.
 Git remains authoritative for executable code and deployment intent. Weavestream
 holds the current operational record and links to the relevant revision.
 <!-- weavestream-records:end -->
+
+<!-- semaphore-workspace-policy:start -->
+## Owner execution policy (2026-11-08)
+
+GitHub holds source. Run validation, automation and production operations through
+Semaphore; FileGrid is the estate's sole GitHub Actions execution exception.
+Do not enable GitHub Actions here. AI refinement uses Kilo with
+`stratos/local-strata`, controlled by OpenHands and the Semaphore project
+`AI - Workspace Automation`. Automatically commit and push only changes that pass
+the repository's reviewed validation profile; preserve failed evidence and never
+force-push. Documentation-only profiles do not authorize application code changes.
+Production deployment remains a separate reviewed Ansible/Semaphore task.
+
+Only TegridyHosting and sentraCX repositories are in scope; never write Systima.
+Weavestream is the system of record for credentials (vault), applications and
+dependencies (flexible assets), and concise current operating guidance (Documents):
+https://weavestream.tegridyhosting.com/admin/companies/d4bd8eb5-0bf8-4eb7-b453-4491e80a1844/assets
+Keep secret values out of source, model workers, logs and ordinary documents.
+Update affected records with verified commit/task evidence in the same change.
+
+Execution source and per-repository scope:
+TegridyHosting/infra-ai, `ansible/openhands/workspaces/profiles.json` and
+`docs/runbooks/WORKSPACE_AUTOMATIONS.md`.
+<!-- semaphore-workspace-policy:end -->
